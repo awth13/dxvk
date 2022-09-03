@@ -370,7 +370,7 @@ namespace dxvk {
       m_deviceFeatures.vk12.bufferDeviceAddress;
 
     if (enableCudaInterop) {
-      devExtensions.nvxBinaryImport.setMode(DxvkExtMode::Optional);
+      // devExtensions.nvxBinaryImport.setMode(DxvkExtMode::Optional);
       devExtensions.nvxImageViewHandle.setMode(DxvkExtMode::Optional);
 
       enabledFeatures.vk12.bufferDeviceAddress = VK_TRUE;
